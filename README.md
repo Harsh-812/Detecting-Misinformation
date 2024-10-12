@@ -32,9 +32,9 @@ The architecture includes:
 
 The project evaluated three models: Logistic Regression, a Basic LSTM Model, and a Tuned LSTM Model. Here are the accuracy results:
 
-* Logistic Regression: Achieved the highest accuracy of 99.53%.
-* Basic LSTM Model: Slightly lower accuracy at 98.48%.
-* Tuned LSTM Model: Accuracy of 98.46%, comparable to the Basic LSTM.
+- **Logistic Regression:** Achieved the highest accuracy of 99.53%.
+- **Basic LSTM Model:** Slightly lower accuracy at 98.48%.
+- **Tuned LSTM Model:** Accuracy of 98.46%, comparable to the Basic LSTM.
 
 ## Key Observations:
 
