@@ -8,8 +8,8 @@ The goal of this project is to build a machine learning model to detect misinfor
 
 - **Natural Language Processing (NLP)**: The project leverages several NLP techniques, including tokenization, stopword removal, stemming, and lemmatization, to preprocess the text data and prepare it for model training.
 - **Word Clouds**: Visualizes the most frequent words in the dataset to understand common patterns in true and fake news articles, helping to identify key features for classification.
-- **Model Training**: Various machine learning and deep learning models are trained to classify news articles, including traditional machine learning algorithms like Naive Bayes and Logistic Regression, alongside deep learning models such as LSTMs.
-- **Performance Evaluation**: Model performance is rigorously evaluated using accuracy, precision, recall, F1 score, and confusion matrices, providing insights into the effectiveness of each model.
+- **Model Training**: Various machine learning models are trained to classify news articles, including classification algorithms like Naive Bayes, Support Vector machine and Logistic Regression.
+- **Performance Evaluation**: Model performance is rigorously evaluated using accuracy, precision, recall and F1 score, providing insights into the effectiveness of each model.
 
 ## Data
 
