@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The goal of this project is to build a machine learning model to detect misinformation in news articles. It uses different machine learning algorithms, including Logistic Regression, Naive Bayes, and Support Vector Machines (SVM), as well as deep learning techniques with LSTMs.
+The goal of this project is to build a machine learning model to detect misinformation in news articles. It uses different machine learning algorithms, including Logistic Regression, Naive Bayes, and Support Vector Machines (SVM).
 
 ## Key Features
 
@@ -10,7 +10,6 @@ The goal of this project is to build a machine learning model to detect misinfor
 - **Word Clouds**: Visualizes the most frequent words in the dataset to understand common patterns in true and fake news articles, helping to identify key features for classification.
 - **Model Training**: Various machine learning and deep learning models are trained to classify news articles, including traditional machine learning algorithms like Naive Bayes and Logistic Regression, alongside deep learning models such as LSTMs.
 - **Performance Evaluation**: Model performance is rigorously evaluated using accuracy, precision, recall, F1 score, and confusion matrices, providing insights into the effectiveness of each model.
-- **Model Saving**: Trained models are saved using Joblib, enabling easy deployment for real-time or batch processing scenarios.
 
 ## Data
 
@@ -19,25 +18,18 @@ The project utilizes a dataset from [Kaggle](https://www.kaggle.com/datasets/clm
 - **True.csv**: Contains news articles labeled as true.
 - **Fake.csv**: Contains news articles labeled as fake.
 
-## Model Architecture
-
-The deep learning model is based on an LSTM (Long Short-Term Memory) network, which is particularly effective for sequential data like text. /n
-The architecture includes:
-
-* Embedding layer to convert words into dense vectors
-* LSTM layer for capturing temporal dependencies in the text
-* Dense layers for classification
 
 ## Results
 
-The project evaluated three models: Logistic Regression, a Basic LSTM Model, and a Tuned LSTM Model. Here are the accuracy results:
+The project evaluated three models: Logistic Regression, Naive Bayes and SVM. Here are the accuracy results:
 
-- **Logistic Regression:** Achieved the highest accuracy of 99.53%.
-- **Basic LSTM Model:** Slightly lower accuracy at 98.48%.
-- **Tuned LSTM Model:** Accuracy of 98.46%, comparable to the Basic LSTM.
+<img width="461" alt="image" src="https://github.com/user-attachments/assets/afe3869e-17ff-4c45-9b0a-862584debea3">
+
 
 ## Key Observations:
 
-* Logistic Regression outperformed both LSTM models, showcasing that simpler traditional models can sometimes be more effective than deep learning approaches.
-* Both the Basic and Tuned LSTM models had similar performance.
-* Logistic Regression's high accuracy and simplicity make it an ideal choice for real-time misinformation detection.
+* Logistic Regression and SVM Achieve Nearly Perfect Performance: Both Logistic Regression and SVM demonstrate extremely high accuracy (1.00), precision, recall, and F1-scores across both classes. This indicates they are highly effective at distinguishing between true and false information in this dataset.
+
+* Naive Bayes Performs Slightly Lower: Naive Bayes has an accuracy of 0.95, with lower precision and recall, especially for the positive class (1.0). This suggests that Naive Bayes may not be as effective at capturing the nuances in language patterns that differentiate true from false information, possibly due to its simpler, probabilistic approach.
+
+* Balanced Performance Across Classes: All models show similar performance for both classes (0 and 1), with balanced precision, recall, and F1-scores. This indicates that the models are not biased towards one class and are equally effective at identifying true and false information, which is important for a balanced misinformation detection system.
